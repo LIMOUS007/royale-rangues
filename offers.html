@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royale Rangues Hotel - Offers</title>
+    <link rel="stylesheet" href="Royale_Rangues.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Reset margins and padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensures full height */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .offers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .offer {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 300px; /* Fixed width for uniformity */
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .offer:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        h2 {
+            text-align: center;
+            color: #007bff; /* Primary color */
+        }
+        .booking-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff; /* Button color */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .booking-link:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="Royale_Rangues.html"><img src="hotel_logo.png" style="width: 50px; height: 50px;" ></a>
+    <nav>
+        <ul>
+            <li><a href="destination_and_hotel.html">Destinations & Hotel</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="book.html" class="book-btn">Book</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="offers">
+    <h2 style="color: black;">SPECIAL OFFERS</h2>
+    <div class="offers-container">
+        <div class="offer">
+            <h3>Breakfast Inclusive Rate</h3>
+            <p>Enjoy a delightful breakfast included with your stay for a perfect start to your day!</p>
+            <a href="book.html" class="booking-link">Book Now</a>
+        </div>
+        <div class="offer">
+            <h3>Newly Opened</h3>
+            <p>Experience the luxury of our newly opened hotel with exclusive introductory rates.</p>
+            <a href="book.html" class="booking-link">Book Now</a>
+        </div>
+        <div class="offer">
+            <h3>Stay for 2 Nights and Get 1 Free</h3>
+            <p>Book two nights and enjoy your third night absolutely free!</p>
+            <a href="book.html" class="booking-link">Book Now</a>
+        </div>
+        <div class="offer">
+            <h3>Weekend Getaway Special</h3>
+            <p>Escape for the weekend with special rates on Friday and Saturday nights.</p>
+            <a href="book.html" class="booking-link">Book Now</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_conditions.html">Terms & Conditions</a>
+    </div>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>

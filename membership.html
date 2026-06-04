@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royale Rangues Hotel - Membership</title>
+    <link rel="stylesheet" href="Royale_Rangues.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-color: #f4f4f4;
+            height: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff; /* Primary color */
+        }
+        .membership-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .benefits, .pricing {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .membership-levels {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .membership-level {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: calc(40% - 20px); /* Two columns with margin */
+            transition: transform 0.3s;
+        }
+        .membership-level:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        @media (max-width: 600px) {
+            .membership-level {
+                width: 90%; /* Make it responsive on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="Royale_Rangues.html"><img src="hotel_logo.png" style="width: 50px; height: 50px;" ></a>
+    <nav>
+        <ul>
+            <li><a href="destination_and_hotel.html">Destinations & Hotel</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="book.html" class="book-btn">Book</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="membership">
+    <h2>Our Membership Programs</h2>
+    <div class="membership-container">
+        <div class="benefits">
+            <h3 style="text-align: center;">Benefits of Membership</h3>
+                <p style="text-align: center;">Exclusive discounts on room rates</p>
+                <p style="text-align: center;">Complimentary breakfast</p>
+                <p style="text-align: center;">Access to special events and promotions</p>
+                <p style="text-align: center;">Priority check-in and check-out</p>
+                <p style="text-align: center;">Personalized service from our dedicated staff</p>
+        </div>
+        <div class="membership-levels">
+            <div class="membership-level" style="background-color: #b8d8e7;">
+                <h3>Diamond</h3>
+                <p>Price: 100000₹/year</p>
+                <p>Unlimited access to all hotel amenities.</p>
+                <p>Complimentary room upgrades.</p>
+                <p>1 extra night for every third stay.</p>
+            </div>
+            <div class="membership-level" style="background-color: #E5E4E2;">
+                <h3>Platinum</h3>
+                <p>Price: 70000₹/year</p>
+                <p>Access to premium facilities and exclusive offers.</p>
+                <p>One free night per stay.</p>
+                <p>(3 free night per year)</p>
+            </div>
+            <div class="membership-level" style="background-color: #FFD700;">
+                <h3>Gold</h3>
+                <p>Price: 40000₹/year</p>
+                <p>Discounted rates on bookings.</p>
+                <p>Access to member-only events.</p>
+            </div>
+            <div class="membership-level" style="background-color: silver;">
+                <h3>Silver</h3>
+                <p>Price: 20000₹/year</p>
+                <p>Basic discounts and offers.</p>
+                <p>Exclusive news and updates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_conditions.html">Terms & Conditions</a>
+    </div>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royale Rangues Hotel - Book Now</title>
+    <link rel="stylesheet" href="Royale_Rangues.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff; /* Primary color */
+            margin-top: 20px; /* Add some space above the heading */
+        }
+        .booking-container {
+            width: 80%;
+            max-width: 600px; /* Max width for the form */
+            margin: 20px auto; /* Center the form */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], input[type="number"], textarea {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding inside the inputs */
+            border: 1px solid #ccc; /* Border style */
+            border-radius: 4px; /* Rounded corners */
+            margin-bottom: 15px; /* Space between inputs */
+        }
+        button {
+            background-color: #007bff; /* Primary color */
+            color: white;
+            padding: 10px 15px; /* Padding for the button */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer on hover */
+            width: 100%; /* Full width */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Royale_Rangues.html"><img src="hotel_logo.png" style="width: 50px; height: 50px;" ></a>
+        <nav>
+            <ul>
+                <li><a href="destination_and_hotel.html">Destinations & Hotel</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="book.html" class="book-btn">Book</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="booking">
+    <h2>Book Your Stay</h2>
+    <div class="booking-container">
+        <form action="booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="4" placeholder="Any special requests..."></textarea>
+
+            <button type="submit">Request Booking</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_conditions.html">Terms & Conditions</a>
+    </div>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
